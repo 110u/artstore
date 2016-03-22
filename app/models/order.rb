@@ -1,4 +1,5 @@
 class Order < ActiveRecord::Base
+  include Tokenable
   belongs_to :user
 
  has_many :items, class_name: "OrderItem", dependent: :destroy
