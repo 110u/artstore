@@ -11,7 +11,7 @@ CarrierWave.configure do |config|
       region:  ENV['region'] # 你的 S3 bucket 的 Region 位置
 
     }
-    config.fog_directory  = ENV['config.fog_directory']# 你設定的 bucket name
+    config.fog_directory  = 'gundiyu'# 你設定的 bucket name
 
   else
     config.storage :file
